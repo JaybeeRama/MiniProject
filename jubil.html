@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project</title>
+<style>
+    *{
+        margin-left: 7px;
+       
+    }
+</style>
+
+
+<style>
+
+    .blogPost {
+        display: grid;
+        grid-template-areas: "col1 col2"
+                             "col1 col3";
+        gap: 10px;
+        /* background-color: blue; */
+    }
+
+
+    .item1{
+        grid-area: col1;
+        
+    }
+    .item2{
+        grid-area: col2;
+        
+    }
+    .item3{
+        grid-area: col3;
+        
+    }
+
+
+    .noTitle{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    ul{
+        padding-inline-start: 0px;
+        display: inline-block;
+    }
+    
+    ul li{
+        list-style-type: none;
+        display: inline-block;
+}
+    .tag{
+
+      
+        border-radius: 20px;
+        padding: 4px 7px ;
+        font-size: 14px;
+        text-align: left;
+        
+        
+    }
+
+    .tag.designTag1{
+        color: rgb(105, 65, 198);
+        background-color: rgb(249, 245, 255);
+    }
+   
+    .tag.designTag2{
+        color: rgb(2, 106, 162);
+        background-color: rgb(240, 249, 255);
+    }    
+
+    .tag.designTag3{
+        color: rgb(2, 122, 72);
+        background-color: rgb(236, 253, 243);
+    }
+
+    .tag.researchTag1{
+        color: rgb(53, 56, 205);
+        background-color: rgb(238, 244, 255);
+        
+    }
+   
+    .tag.researchTag2{
+        color: rgb(193, 21, 116);
+        background-color: rgb(253, 242, 250);
+    }
+
+    .tag.researchTag3{
+        color: rgb(193, 21, 116);
+        background-color: rgb(253, 242, 250);
+    }    
+
+    .tag.presentationTag{
+        color: rgb(193, 21, 116);
+        background-color: rgb(253, 242, 250);
+    }
+   
+
+    .description1{
+        
+        /* padding-right: 120px; */
+        /* float: right; */
+        flex: 1 1 45%;
+        margin-left: 20px;
+        
+    }
+    .item2_img {
+        flex: 1 1 40%;
+    }
+    .item2_img img {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+   
+</style>
+
+
+</head>
+<body>
+    
+        <center> 
+            
+            <h5 style="color: purple; ">Our blog</h5>
+            <h1>Stories and interviews</h1>
+
+            <p>Subscribe to learn about new product features, the latest in technology,<br>
+                solutions, and updates.
+            </p>
+
+            <div>
+                <input type="text"placeholder="Enter your email">
+                <input type="submit"value="Subscribe" style="background-color: purple; color: white; border-radius: 4px;">
+            </div>
+            <p style="font-size: x-small;">We care about your data in our privacy policy</p>
+        </center>
+      
+        
+    <h5 style="font-size:large; margin-left: 30px;">Recent blog posts</h5>
+
+    <div class="blogPost">
+        <div class="item1"> 
+            <div><img src="OfficeChair.png" height="228px" width="592px"> </div>
+            <div>
+                <h5 style="color:purple">Olivia Rhye . 20 Jan 2022</h5>
+                <h1 style="font-size: large;">UX review presentations&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↗</h1>
+                <p>How do you create compelling presentations that wow your collleagues and <br>
+                   impress your managers?
+                </p>
+            </div>
+                
+                    <ul>
+                        <li class="tag designTag1" style="font-weight: bold;">Design</li>
+                        <li class="tag researchTag1" style="font-weight: bold;">Research</li>
+                        <li class="tag presentationTag" style="font-weight: bold;">Presentation</li>
+                    </ul>
+                
+            
+        </div>
+
+        <div class="item2 noTitle">
+            <div class="item2_img">
+                <div><img src="Team.png" height="200px" width="320"> </div>
+            </div>
+           
+                <div class="description1">
+                    <h5 style="color: purple;">Phoenix Baker . 19 Jan 2022 <br> --</h5>
+                    <p>Linear helps streamline software <br>
+                       projects, sprints, tasks, and bug <br>
+                       tracking. Here's how to get...
+                    </p>
+
+                    <ul>
+                        <li class="tag designTag2" style="font-weight: bold;">Design</li>
+                        <li class="tag researchTag2" style="font-weight: bold;">Research</li>
+                    </ul>
+                
+                </div>
+           
+            </div>
+
+        <div class="item3 noTitle">
+            <div class="item2_img">
+                <div><img src="Desktop.png" height="200px" width="320"> </div>      
+            </div>
+           
+                <div class="description1">
+                    <h5 style="color: purple;">Lana Steiner . 18 Jan 2022</h5>
+                    <p style="font-weight: bold; font-size: small;">Building your API Stack</p>
+                    <p>The rise of RESTful APIs has<br>
+                       been met by a rise in tools for  <br>
+                       creating, test, and manag...
+                    </p>
+
+                    <ul>
+                        <li class="tag designTag3" style="font-weight: bold;">Design</li>
+                        <li class="tag researchTag3" style="font-weight: bold;">Research</li>
+                    </ul>
+                
+                </div>
+           
+            </div>
+
+                    <!-- 
+                            
+                            <div class="item3">
+                                <div>
+                                    <img src="Desktop.png" height="250px" width="50%">    
+                            
+                                    <div class="description">
+                                        <h4 style="color: purple">Phoenix Baker . 19 Jan 2022 <br> --</h4>
+                                        <p>Linear helps streamline software <br>
+                                        projects, sprints, tasks, and bug <br>
+                                        tracking. Here's how to get...
+                                        </p>
+
+                                        <ul>
+                                            <li class="tag designTag">Design</li>
+                                            <li class="tag researchTag">Research</li>
+                                        </ul>
+                                    </div>
+                            
+                                </div>
+
+                            
+                            </div> -->
+
+
+                            <!-- <div class="item3"> 
+                                    <img src="web.jpg" alt="">
+
+                            </div> -->
+        
+
+    </div>
+
+
+</body>
+</html>
